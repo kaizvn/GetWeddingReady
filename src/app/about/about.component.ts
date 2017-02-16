@@ -34,6 +34,7 @@ export class AboutComponent implements OnInit {
       .data
       .subscribe((data: any) => {
         // your resolved data from route
+        console.log("dta",data);
         this.localState = data.yourData;
       });
 

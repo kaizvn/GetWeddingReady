@@ -114,9 +114,7 @@ module.exports = function (options) {
           use: ['style-loader', 'css-loader', 'sass-loader'],
           include: [helpers.root('src', 'styles')]
         },
-
       ]
-
     },
 
     plugins: [
@@ -164,6 +162,7 @@ module.exports = function (options) {
             '@angular/http',
             '@angular/router',
             '@angularclass/hmr',
+            '@angular/material',
             'rxjs',
           ]
         },

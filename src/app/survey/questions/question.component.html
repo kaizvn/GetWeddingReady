@@ -1,0 +1,21 @@
+<md-card class="example-card">
+	<md-card-header>
+		<div md-card-avatar class="example-header-image"></div>
+		<!--<md-card-title>Shiba Inu</md-card-title>-->
+		<!--<md-card-subtitle>Dog Breed</md-card-subtitle>-->
+	</md-card-header>
+	<!--<img md-card-image src="assets/img/examples/shiba2.jpg">-->
+	<md-card-content>
+		<p>
+			{{question}}
+		</p>
+	</md-card-content>
+	<md-card-actions>
+		<md-radio-group class="example-radio-group" [(ngModel)]="selectedValue" (change)="onSeleted()">
+			<md-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
+				{{answer}}
+			</md-radio-button>
+		</md-radio-group>
+	</md-card-actions>
+	<div class="selected-value">{{selectedValue}}</div>
+</md-card>
